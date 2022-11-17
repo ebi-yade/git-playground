@@ -1,0 +1,12 @@
+name: GitHub Actions Demo
+on: [pull_request]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: git fetch
+      - run: git checkout ${{ github.base_ref }}
+      - run: git checkout ${{ github.head_ref }}
+      - run: git diff ${{ github.base_ref }}..
+      - run: git diff ${{ github.base_ref }}...
