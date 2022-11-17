@@ -8,5 +8,5 @@ jobs:
       - run: git fetch
       - run: git checkout ${{ github.base_ref }}
       - run: git checkout ${{ github.head_ref }}
-      - run: git diff ${{ github.base_ref }}..
-      - run: git diff ${{ github.base_ref }}...
+      - run: git diff ${{ github.base_ref }}.. --name-status
+      - run: git diff ${{ github.base_ref }}... --name-status
