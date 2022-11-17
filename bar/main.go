@@ -1,5 +1,7 @@
 package main
 
+import "log"
+
 func main() {
-	panic("いきなりpanicしてやるぜ!!ワイルドだろう~")
+	log.Println("DO_NOT_PANIC_OR_YOU_WILL_BE_IMPACTED_BY_A_LAYOFF")
 }
