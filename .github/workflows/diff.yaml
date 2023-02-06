@@ -7,4 +7,4 @@ jobs:
       image: golang:1.19
     steps:
       - uses: actions/checkout@v3
-      - run: go version
+      - run: go install github.com/bufbuild/buf/cmd/buf@v1.11.0
